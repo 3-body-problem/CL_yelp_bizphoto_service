@@ -4,7 +4,7 @@
   "author": "hibow",
   "license": "MIT",
   "engines": {
-    "node": ">=6.13.0"
+    "node": ">=10.13.0"
   },
   "scripts": {
     "dev": "webpack-dev-server --mode development --open --hot",
@@ -15,7 +15,7 @@
     "seed": "node database/seeder/seed.js",
     "unseed": "node database/seeder/unseed.js",
     "compile-sass": "node-sass client/src/stylesheets/main.scss client/dist/style.css",
-    "test": "jest",
+    "test": "jest --verbose",
     "test:desc": "npm test -- --verbose",
     "test:watch": "npm test -- --watch",
     "test:coverage": "jest --coverage --colors"

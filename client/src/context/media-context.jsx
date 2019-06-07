@@ -2,6 +2,7 @@ import React from 'react';
 import useFetch from '../lib/useFetch';
 
 const MediaContext = React.createContext();
+// const UserContext = React.createContext();
 
 let url = `/biz_photos/${1}/${1}`; // /biz_photos/:bId/:pId
 if (window.location.pathname !== '/') {
@@ -13,10 +14,10 @@ const MediaProvider = (props) => {
   const data = useFetch(url);
   let value;
   if (data.state) {
-    // const userUrl = '/users/?uIds[]=1';
-    // // eslint-disable-next-line react-hooks/rules-of-hooks
-    // const userdata = useFetch(userUrl);
-    // console.log(userdata.username);
+    // console.log(data.state[0]);
+    // const photos = data.state[0];
+    // userIds = userIds.concat(data.state[1]);
+    // console.log('userIDs:', userIds);
     value = data.state;
     // value = imgUrl;
   }
@@ -26,6 +27,7 @@ const MediaProvider = (props) => {
 const useMedia = () => {
   const context = React.useContext(MediaContext);
   console.log('media context is ', context);
+  const params = { uIds: [] };
   if (context === undefined) {
     return [
       {
@@ -41,6 +43,12 @@ const useMedia = () => {
         text: 'test 12312312312ddddd3 wihfa;lsjf weirhoishfl scccccccccgggggdf',
       },
     ];
+  }
+  if (context.length === 2) {
+    context[1].forEach((uId) => {
+      params.uIds.push(uId);
+    });
+    return [context[0], params];
   }
   return context;
 };

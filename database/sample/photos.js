@@ -84,7 +84,7 @@ const samplePhotos = [
   {
     pId: 11,
     imgUrl: '/assets/mae-mu-ls.png',
-    uId: 4,
+    uId: 3,
     bId: 1,
     text: 'yummy dessert!!',
     tag: 'dessert',
@@ -94,15 +94,15 @@ const samplePhotos = [
     imgUrl: '/assets/773757-ls.png',
     uId: 4,
     bId: 1,
-    text: 'yummy dessert!!',
+    text: 'it is a test',
     tag: 'dessert',
   },
   {
     pId: 13,
     imgUrl: '/assets/1491370-ls.png',
-    uId: 4,
+    uId: 1,
     bId: 1,
-    text: 'yummy dessert!!',
+    text: 'I am so hungry!',
     tag: 'dessert',
   },
   {
@@ -116,9 +116,9 @@ const samplePhotos = [
   {
     pId: 15,
     imgUrl: '/assets/1508448-ls.png',
-    uId: 4,
+    uId: 2,
     bId: 1,
-    text: 'yummy dessert!!',
+    text: 'yummy!!',
     tag: 'dessert',
   },
   {
@@ -126,7 +126,7 @@ const samplePhotos = [
     imgUrl: '/assets/1585525-ls.png',
     uId: 4,
     bId: 1,
-    text: 'yummy dessert!!',
+    text: 'So...',
     tag: 'dessert',
   },
   {
@@ -134,13 +134,13 @@ const samplePhotos = [
     imgUrl: '/assets/1608269-ls.png',
     uId: 4,
     bId: 1,
-    text: 'yummy dessert!!',
+    text: 'my food!!',
     tag: 'dessert',
   },
   {
     pId: 18,
     imgUrl: '/assets/1627298-ls.png',
-    uId: 4,
+    uId: 3,
     bId: 1,
     text: 'yummy dessert!!',
     tag: 'dessert',
@@ -148,7 +148,7 @@ const samplePhotos = [
   {
     pId: 19,
     imgUrl: '/assets/1638420-ls.png',
-    uId: 4,
+    uId: 2,
     bId: 1,
     text: 'yummy dessert!!',
     tag: 'dessert',
@@ -156,9 +156,9 @@ const samplePhotos = [
   {
     pId: 20,
     imgUrl: '/assets/1648470-ls.png',
-    uId: 4,
+    uId: 1,
     bId: 1,
-    text: 'yummy dessert!!',
+    text: 'Feast!!',
     tag: 'dessert',
   },
 ];

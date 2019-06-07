@@ -1,20 +1,33 @@
 import React from 'react';
 import useFetch from '../lib/useFetch';
-// TODO: need small size photo...
+import { useMedia } from './media-context';
 
 const UserContext = React.createContext();
 
-// let url = `/biz_photos/${1}/${1}`; // /biz_photos/:bId/:pId
-const url = '/users/?uIds[]=1';
 
+// // const ids = useMedia()[1];
+// console.log('id is ', ids);
+// IDs.forEach((uId) => {
+//   url += `uIds[]=${uId}&`;
+// });
+// url.substring(0, url.length - 1);
 const UserProvider = (props) => {
-  const data = useFetch(url);
+  const result = useMedia();
+  console.log('result is:', result);
+  const url = '/users/';
+  let params;
+  if (result.length === 2) {
+    // console.log(result[1]);
+    // result[1].forEach((uId) => {
+    //   params.uIds.push(uId);
+    // });
+    console.log('param : ', result[1]);
+    params = result[1];
+  }
+  const data = useFetch(url, params);
   let value;
   if (data.state) {
-    // const userUrl = '/users/?uIds[]=1';
-    // // eslint-disable-next-line react-hooks/rules-of-hooks
-    // const userdata = useFetch(userUrl);
-    // console.log(userdata.username);
+    console.log('user here:', data.state);
     value = data.state;
     // value = imgUrl;
   }

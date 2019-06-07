@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
-const url = 'mongodb://localhost';
-const mongoDBURI = process.env.MONGOLAB_URI || url;
+const url = 'mongodb://127.0.0.1:27017';// localhost';
+// const mongoDBURI = process.env.MONGOLAB_URI || url;
 const run = async () => {
-  await mongoose.connect(mongoDBURI,
+  await mongoose.connect(url,
     {
       dbName: 'Yelp',
       useNewUrlParser: true,

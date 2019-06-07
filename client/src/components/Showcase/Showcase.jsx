@@ -5,9 +5,18 @@ import Seemore from './Seemore';
 import Watchvid from './Watchvid';
 import { useMedia } from '../../context/media-context';
 import useIndex from '../../lib/useIndex';
+import useFetch from '../../lib/useFetch';
 
 const Showcase = () => {
-  const media = useMedia();
+  const result = useMedia();
+  let media = [];
+  const url = '/users/';
+  const params = { uIds: [] };
+  if (result.length === 2) {
+    media = result[0];
+  } else {
+    media = result;
+  }
   // console.log('media?', media);
   // console.log('logging here?', process.env.NODE_ENV);
   const len = media.length;

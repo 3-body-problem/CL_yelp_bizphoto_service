@@ -26,7 +26,8 @@ const Photo = ({
                 alt="John"
                 className="photo-box-img"
                 height="30"
-                src="https://s3-media4.fl.yelpcdn.com/photo/Va09KqWDtRiYbA0XWTU48g/30s.jpg"
+                // src="https://s3-media4.fl.yelpcdn.com/photo/Va09KqWDtRiYbA0XWTU48g/30s.jpg"
+                src="http://pbs.twimg.com/profile_images/1099856449918943232/hKv3Fddh.jpg"
                 // srcSet="https://s3-media4.fl.yelpcdn.com/photo/Va09KqWDtRiYbA0XWTU48g/60s.jpg 2.00x,https://s3-media4.fl.yelpcdn.com/photo/Va09KqWDtRiYbA0XWTU48g/90s.jpg 3.00x,https://s3-media4.fl.yelpcdn.com/photo/Va09KqWDtRiYbA0XWTU48g/ss.jpg 1.33x"
                 width="30"
               />
